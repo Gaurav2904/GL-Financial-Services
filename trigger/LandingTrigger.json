@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "This trigger will initiate every time a file is loaded into the input data folder in our storage account. ",
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
