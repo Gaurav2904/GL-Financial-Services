@@ -13,7 +13,11 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "fileName"
+					}
+				],
 				"typeProperties": {
 					"notebookPath": "/Shared/gl-services"
 				},
@@ -23,6 +27,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
