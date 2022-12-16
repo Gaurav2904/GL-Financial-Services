@@ -162,7 +162,7 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/input/blobs/input_data/",
+					"blobPathBeginsWith": "/input/blobs/landing/",
 					"blobPathEndsWith": ".csv",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('LandingTrigger_properties_typeProperties_scope')]",
