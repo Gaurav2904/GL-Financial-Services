@@ -1,0 +1,25 @@
+{
+	"name": "glDatabricks",
+	"properties": {
+		"description": "This is a linked service connection with databricks.",
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-7291808514432893.13.azuredatabricks.net",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Databricks-access-token",
+				"secretVersion": "864c21b0641744f493284afa117fa87a"
+			},
+			"newClusterNodeType": "Standard_F4",
+			"newClusterNumOfWorker": "1",
+			"newClusterVersion": "10.4.x-scala2.12",
+			"newClusterInitScripts": [],
+			"clusterOption": "Fixed"
+		}
+	}
+}
