@@ -1,0 +1,26 @@
+{
+	"name": "LandingTrigger",
+	"properties": {
+		"description": "This trigger will initiate every time a file is loaded into the input data folder in our storage account. ",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/input_data/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/ec3999fe-bc0e-4dc1-b992-be2c0a5d558b/resourceGroups/gl-project-live-case-study/providers/Microsoft.Storage/storageAccounts/glstore1123",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
