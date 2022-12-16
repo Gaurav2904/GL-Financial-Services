@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline-live",
 	"properties": {
 		"activities": [
 			{
@@ -13,13 +13,15 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "fileName"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Shared/gl-services"
+					"notebookPath": "/Shared/gl-services",
+					"baseParameters": {
+						"fileName": {
+							"value": "@pipeline().parameters.fileName",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "glDatabricks",
