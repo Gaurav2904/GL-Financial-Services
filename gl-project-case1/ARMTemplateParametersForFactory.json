@@ -13,6 +13,12 @@
 		},
 		"GLstorage_properties_typeProperties_url": {
 			"value": "https://glstore1123.dfs.core.windows.net/"
+		},
+		"LandingTrigger_properties_pipeline-live_parameters_fileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"LandingTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/ec3999fe-bc0e-4dc1-b992-be2c0a5d558b/resourceGroups/gl-project-live-case-study/providers/Microsoft.Storage/storageAccounts/glstore1123"
 		}
 	}
 }
