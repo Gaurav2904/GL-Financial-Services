@@ -1,0 +1,13 @@
+{
+	"name": "GLstorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Linked service connection with storage account account to connect data factory with landing folder.",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://glstore1123.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEMxOTlFQTgxLTY4NjctNEVCQy1CMjcwLTI5NkU3QzY3QjVCQ19hN2I1MDlmYS1hOGFkLTRhZTMtYjk0Mi05Yjg1YjYxYWQxZWEiDQp9"
+		}
+	}
+}
